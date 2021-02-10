@@ -1,0 +1,18 @@
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <p>
+      <label>Title:</label>
+      <input type="text" formControlName="title">
+  </p>
+  <p>
+      <label>Description:</label>
+      <input type="text" formControlName="description">
+  </p>
+  <p>
+    <label>Image:</label>
+    <input type="file" formControlName="image" (change)="onFileSelect($event)">
+</p>
+  <p>
+      <button type="submit" [disabled]="!form.valid">Submit</button>
+  </p>
+</form>
