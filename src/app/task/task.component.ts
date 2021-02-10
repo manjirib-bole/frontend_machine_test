@@ -40,7 +40,7 @@ onSubmit() {
   console.log(this.form.value);
   const formData = new FormData();
   formData.append('file', this.form.get('image').value);
-  console.log(formData)
+  console.log(formData);
     //   this.taskService.addTask(this.form.value).subscribe(
     //     (result)=> console.log(result),
     //     (err) =>console.log(err)
